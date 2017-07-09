@@ -1,0 +1,34 @@
+在cmd 指定目录下
+I:\react学习\React.js入门基础与案例开发\myApp
+
+npm init
+输入项目信息
+
+关键的是如图1
+entry point : index.js
+就是默认执行的 js 文件
+
+执行
+cnpm install --save react react-dom babelify babel-preset-react
+安装 react
+
+打开 package.json
+找到
+"dependencies": {
+里的安装的是包的依赖
+
+"babelify": "^7.3.0",
+为大于 7.3.0 版本
+
+"babel-preset-react": "^6.24.1",
+必须大于版本 6.24.1
+
+"react": "^15.6.1",
+当前 react 版本 15.6.1
+老师版本 15.3.2
+
+在cmd里运行
+npm install --save babel-preset-es2015
+或者
+cnpm install --save babel-preset-es2015
+安装es2015

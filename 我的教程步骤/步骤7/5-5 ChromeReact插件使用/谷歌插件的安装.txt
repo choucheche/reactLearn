@@ -1,0 +1,24 @@
+先修改
+src\js\index.js
+里的代码
+为
+...省略
+如代码里写的
+
+
+翻墙安装谷歌插件
+React Developer Tools
+重启浏览器，
+打开F12
+会多出个React
+
+在里面查看
+比如
+ExampleApplication
+就是
+src\js\index.js 里的
+var ExampleApplication = React.createClass({
+这个类的名字
+
+插件里的 Highlight Updates 如果选中，它会让更新的代码外面显示一个红框
+插件里的 Highlight Search 如果选中，它会你搜索inin的代码外面显示一个红框

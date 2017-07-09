@@ -1,0 +1,3 @@
+npm install --save-dev babel-cli babel-preset-env
+
+这个插件可以让 es6代码转换成es5代码，让更多的浏览器兼容

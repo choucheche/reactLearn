@@ -1,0 +1,18 @@
+webpack安装
+http://webpack.github.io/docs/configuration.html
+官方安装文档
+
+在根目录下 新建 webpack.config.js
+
+cmd下安装
+npm install -g webpack
+npm install -g webpack-dev-server
+npm install webpack-dev-server --save
+npm install webpack --save
+注意：或者用 cpm 安装，不用 npm
+
+在根目录下 package.json 文件夹下的
+"dependencies": {
+里会有
+"webpack": "^3.1.0",
+"webpack-dev-server": "^2.5.1"

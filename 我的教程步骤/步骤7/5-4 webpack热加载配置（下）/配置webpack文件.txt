@@ -1,0 +1,49 @@
+新建目录文件夹
+src 到根目录下
+在 src/js/index.js 里写入
+
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+ReactDOM.render(
+  <h1>Hello World!</h1>,
+  document.getElementById('example')
+);
+
+在根目录 新建文件 index.html
+写入
+<div id="example">123</div>
+<script src="./src/bundle.js"></script>
+
+
+cmd
+cd 到项目文件下
+
+输入
+webpack
+可运行项目
+
+输入
+webpack --watch
+可以一直运行项目
+每当src内的文件发生改变，都会 执行一次任务
+之后刷新页面，就会发生变化
+
+会在src 目录下改变 bundle.js 文件
+
+在cmd里
+执行
+webpack-dev-server
+会
+显示
+Project is running at http://localhost:8080/
+打开地址 http://localhost:8080/
+这时候修改 \src\js\index.js
+http://localhost:8080/ 会自动刷新页面
+
+在cmd里
+执行
+webpack-dev-server --inline --hot
+也会在修改代码的时候，让页面自动刷新
+
+注意：HTML不会做实时的刷新只有JS会实时刷新

@@ -1,0 +1,12 @@
+为了让 node 更好的运行，需要配置国内源
+http://npm.taobao.org/
+淘宝的 node 国内源
+
+在 cmd 下运行
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+安装好后，显示版本为 cnpm@5.0.0
+安装好后，以后 npm install安装，变为 cnpm install
+
+F:\rj\node\node_modules\npm\npmrc
+里可以查看国内源

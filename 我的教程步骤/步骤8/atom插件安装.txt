@@ -1,0 +1,21 @@
+atom-ternjs
+用来ES2015 ES2016 语法的支持
+
+atom-beautify
+代码分辨颜色
+ctrl+alt+b 自动格式化代码
+
+open-in-browser
+打开 html 文件
+
+emmet
+快捷打代码
+
+file-icons
+左侧文件树图标
+
+highlight-line
+高亮行
+
+highlight-selected
+高亮行
