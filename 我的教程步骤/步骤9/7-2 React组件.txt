@@ -1,0 +1,7 @@
+cmd
+到指定目录下
+webpack-dev-server --inline --hot
+运行项目
+
+在 src/js下新建文件夹 components
+在 src/js/components 新建文件 header.js
