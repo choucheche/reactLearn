@@ -7,8 +7,8 @@ http://webpack.github.io/docs/configuration.html
 cmd下安装
 npm install -g webpack
 npm install -g webpack-dev-server
-npm install webpack-dev-server --save
-npm install webpack --save
+cnpm install webpack-dev-server --save
+cnpm install webpack --save
 注意：或者用 cpm 安装，不用 npm
 
 在根目录下 package.json 文件夹下的
@@ -16,3 +16,7 @@ npm install webpack --save
 里会有
 "webpack": "^3.1.0",
 "webpack-dev-server": "^2.5.1"
+
+cmd下安装
+cnpm install babel-loader
+解决webpack的运行 bug

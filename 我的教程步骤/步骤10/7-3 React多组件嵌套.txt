@@ -3,3 +3,5 @@
 
 新建文件
 \src\js\components\bodyindex.js
+
+最终如图1
