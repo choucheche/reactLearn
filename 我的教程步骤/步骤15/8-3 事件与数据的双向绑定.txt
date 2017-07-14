@@ -1,0 +1,4 @@
+新建文件
+myApp\src\js\components\bodychild.js
+
+改变了 bodyindex.js
