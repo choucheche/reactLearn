@@ -1,0 +1,28 @@
+https://facebook.github.io/react/docs/typechecking-with-proptypes.html
+查看数据类型是否符合
+使用方法
+BodyIndex.propTypes={
+/*给组件 BodyIndex 进行类型检测，如果有错，会报错，代码无法执行*/
+  userid:React.PropTypes.number.isRequired
+  /*
+    测试 userid 的数据类型是否是数字 .number，而且必填 .isRequired
+    这里的 userid 是从index.js的父组件 Index传来的
+  */
+}
+
+
+bodyindex.js里修改了
+
+const defaultProps = {
+//设置默认值组，名为 defaultProps
+	username: '这是一个默认的用户名'
+};
+/*设置默认的 username，当没有别的 username时，就用这个值*/
+
+BodyIndex.defaultProps = defaultProps;
+//让 BodyIndex 组件启用 defaultProps ，是上面定义的默认值
+
+<BodyChild {...this.props} id={4}
+
+bodychild.js里修改了
+<p>这是从index.js传来的 {this.props.userid} {this.props.username} <br/> 这是从bodyindex.js传来的 {this.props.id}</p>
