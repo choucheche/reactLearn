@@ -1,0 +1,23 @@
+修改了 header.js
+在 render()里加入
+/*内联样式*/
+const styleComponentHeader = {
+  header:{
+    backgroundColor: "#333333",
+    color: "#FFFFFF",
+    "padding-top": "15px",
+    paddingBottom: "15px"
+  },
+  //还可以定义其他的样式
+
+};
+/*内联样式 结束*/
+
+<header className="smallFontSize" style={styleComponentHeader.header}>
+其中 style={styleComponentHeader.header} 是用的内联样式
+而 className="smallFontSize" 用的是css/style.css里的内容
+
+在目录 index.html 中引入css/style.css
+<head>
+  <link rel="stylesheet" href="./src/css/style.css"/>
+</head>
