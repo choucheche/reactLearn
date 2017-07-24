@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import BodyChild from './bodychild';
-//隐入子页面 BodyChild
+//引入子页面 BodyChild
 
 export default class BodyIndex extends React.Component{
 /*
@@ -69,8 +69,9 @@ export default class BodyIndex extends React.Component{
         <p>{this.state.username}</p>
         {/*调用了上面的 this.state */}
         <p>{this.state.age}</p>
-        {/*调用了上面的 this.age */}
+        {/*调用了上面的 this.age，有倒计时，4秒后变成 30*/}
         <p>{this.state.username2} {this.state.age2}</p>
+        {/*在上面 render()下，有倒计时，4秒后变成 dd 50*/}
         <p>这是index.js里的Index父组件传给子组件BodyIndex的userid：{this.props.userid}</p>
         {/*this.props和state不同，它可以在不同的组件之间传递值*/}
         <p>这是index.js里的Index父组件传给子组件BodyIndex的username：{this.props.username}</p>
@@ -78,7 +79,7 @@ export default class BodyIndex extends React.Component{
         <br/><br/>
 
         <input type='button' value='提交，让age3变成50' onClick={this.changeUserInfo.bind(this)}/>
-        {/*点击，执行 changeUserInfo 函数,为了让this找到值，这里要加 .bind(this)*/}
+        {/*点击，执行上面的 changeUserInfo 函数,为了让 this 找到值，这里要加 .bind(this)*/}
         <p>这是age3：{this.state.age3}</p>
 
         <br/><br/>
@@ -86,9 +87,11 @@ export default class BodyIndex extends React.Component{
         <div>这是bodychild.js里的 BodyChild类添加的</div>
         <BodyChild handleChildValueChange={this.handleChildValueChange.bind(this)}/>
         {/*
-          子页面 bodychild.js里的组件 BodyChild
+          因为上面引入了子页面 import BodyChild from './bodychild'; 的组件
           利用onChange={this.props.handleChildValueChange} 给它传入值
           它使用上面写的函数 handleChildValueChange 来改变 age4的 state
+          这里的生成的 input 都是从子页面 bodychild.js 里的
+          在handleChildValueChange函数里修改的值age4却是这个页面的值
         */}
         <p>这是age4：{this.state.age4}</p>
 
