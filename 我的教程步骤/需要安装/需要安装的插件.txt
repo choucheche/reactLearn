@@ -20,6 +20,8 @@ http://webpack.github.io/docs/configuration.html
 
 在根目录下 新建 webpack.config.js
 
+如果package.json里有写需要安装什么插件，只需要在cmd下输入 npm install 就会自动安装所有的插件
+
 cmd下安装
 npm install -g webpack
 npm install -g webpack-dev-server
@@ -35,8 +37,15 @@ cmd
 webpack-dev-server --inline --hot
 运行项目
 
+步骤18-共享组件Mixins
 https://github.com/brigand/react-mixin
 安装 cnpm install --save react-mixin@2
 在想用的 js 文件里加入
 import ReactMixin from 'react-mixin';
 就可以使用共享组件了
+
+步骤21-CSS模块化
+cnpm install --save babel-plugin-react-html-attrs
+/*这个插件可以让 react写样式的时候写class，不用写className了*/
+cnpm install --save style-loader
+cnpm install --save css-loader

@@ -1,0 +1,47 @@
+安装
+cnpm install --save babel-plugin-react-html-attrs
+/*这个插件可以让 react写样式的时候写class，不用写className了*/
+cnpm install --save style-loader
+cnpm install --save css-loader
+
+在webpack.config.js
+修改
+module:{
+  rules:[
+    {
+      test: /\.js?$/,
+      exclude: /(node_modules)/,
+      loader: 'babel-loader',
+      query: {
+        presets: ['react', 'es2015'],
+        plugins: ['react-html-attrs'], //添加组件的插件配置
+      }
+    },
+    //下面是添加的 css 的 loader，也即是 css 模块化的配置方法，大家可以拷贝过去直接使用
+    {
+      test: /\.css$/,
+      exclude: /node_modules/,
+      use: [
+        'style-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            modules: true,
+          },
+        },
+      ],
+    },
+  ]
+},
+注意：webpack.config.js和老师的源代码不一样，老师的会报错
+现在的也有问题 页面里class名称完全变成 hash 值
+webpack配置详情查看
+http://blog.parryqiu.com/2017/05/23/webpack2-tech-020/
+和
+https://github.com/ParryQiu/DevOpenClub-Tech-Webpack2
+教程
+
+这是它的css规则
+
+创建了 footer.css
+在footer.js里修改
