@@ -1,0 +1,30 @@
+http://www.material-ui.com/#/
+国外样式框架（更好看）
+
+
+https://ant.design/index-cn
+国内样式框架（老师用的是这个国内的）
+
+安装样式框架 https://ant.design/index-cn
+cnpm install antd --save
+
+通过下面这种方式引入模块，而不是引入所有模块
+import { DatePicker } from 'antd';
+ReactDOM.render(<DatePicker />, mountNode);
+
+通过下面这种方式引入样式
+import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
+
+在 index.js中加入
+import 'antd/dist/antd.css';
+/*导入全部的 ant.design 样式框架的样式*/
+
+在bodyindex.js中加入
+import { Input } from 'antd';
+//引入安装好的 ant.design 框架的 Input 样式
+和
+<Input placeholder="Basic usage" />
+
+修改 webpack.config.js 的代码
+变为{ test: /\.css$/, loader: 'style-loader!css-loader' }
+才能使用 art.design 样式框架
