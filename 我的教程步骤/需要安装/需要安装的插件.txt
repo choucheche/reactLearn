@@ -49,3 +49,9 @@ cnpm install --save babel-plugin-react-html-attrs
 /*这个插件可以让 react写样式的时候写class，不用写className了*/
 cnpm install --save style-loader
 cnpm install --save css-loader
+
+步骤24-AntDesign样式框架使用
+cnpm install antd --save
+
+步骤25-Router参数传递
+cnpm install --save react-router

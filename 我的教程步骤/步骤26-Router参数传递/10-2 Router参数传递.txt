@@ -1,0 +1,11 @@
+修改 header.js
+<Link to={'/list/1234'}>列表页面</Link>
+其中 to={'/list/1234'}，中的1234代表传过去的参数值
+
+修改 root.js
+<Route component={ComponentList} path="list/:id"></Route>
+修改了path="list/:id"，想传过去一个 id 的参数
+
+修改 list.js
+<h2>这里是列表页面，url传来的Id值为: {this.props.params.id}</h2>
+其中 {this.props.params.id} 表示拿到传来值的参数 id

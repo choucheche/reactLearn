@@ -1,0 +1,37 @@
+react-router 官方地址
+https://github.com/ReactTraining/react-router
+
+安装
+cnpm install --save react-router
+
+新建src/js/root.js
+
+修改 root.js
+将 index.js 里的 ReactDOM.render(<Index/>,document.getElementById('example'));
+给 root.js 写成 ReactDOM.render(<Root/>,document.getElementById('example'));
+以 Root 为整个APP的入口
+
+新建 src/js/components/list.js
+
+修改 package.json
+将
+"main": "index.js",
+改为
+"main": "root.js",
+
+修改 webpack.config.js
+将
+entry: "./src/js/index.js",
+改为
+entry: "./src/js/root.js",
+
+修改 index.js
+修改 root.js
+浏览器打开
+http://localhost:8080/#/list
+
+新建 src/js/components/details.js
+http://localhost:8080/#/details
+
+新建 src/js/components/details2.js
+http://localhost:8080/#/details2
