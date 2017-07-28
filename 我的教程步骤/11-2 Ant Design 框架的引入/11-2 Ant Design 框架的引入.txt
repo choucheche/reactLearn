@@ -1,0 +1,23 @@
+https://ant.design/index-cn
+国内样式框架（老师用的是这个国内的）
+
+安装样式框架 https://ant.design/index-cn
+cnpm install antd --save
+
+通过下面这种方式引入模块，而不是引入所有模块
+import { DatePicker } from 'antd';
+ReactDOM.render(<DatePicker />, mountNode);
+
+通过下面这种方式引入样式
+import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
+
+这里在 root.js 想让 button 使用 antd 框架样式
+root.js修改
+
+import { Button } from 'antd';
+import 'antd/dist/antd.css';
+和
+<Button type="primary">Primary</Button>
+<Button>Default</Button>
+<Button type="dashed">Dashed</Button>
+<Button type="danger">Danger</Button>
