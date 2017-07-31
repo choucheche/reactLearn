@@ -1,0 +1,16 @@
+图标.png网站：www.iconfinder.com
+
+新建 src/js/components/pc_header.js
+
+https://ant.design/components/grid-cn/
+AntDesign样式模板 栅格，这里的栅格分为24块
+https://ant.design/components/layout-cn/
+AntDesign样式模板 布局，采用 FLEX 方式
+
+新建 src/js/components/pc_index.js
+
+修改 src/js/root.js
+
+新建 src/css/pc.css
+
+修改 index.html

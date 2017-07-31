@@ -1,0 +1,22 @@
+https://github.com/contra/react-responsive
+插件，可以实现媒体查询响应式代码，自适应PC和移动
+
+cnpm install react-responsive --save
+
+新建 src/js/components/mobile_index.js
+新建 src/js/components/mobile_header.js
+修改 src/js/root.js
+
+注意：
+<MediaQuery query='(min-device-width:1224px)'>
+{/*如果屏幕的宽度最小为 1224px 时，为PC页面*/}
+  <PCIndex></PCIndex>
+</MediaQuery>
+<MediaQuery query='(max-device-width:1224px)'>
+{/*如果屏幕的宽度最大为 1224px 时，为移动页面*/}
+  <MobileIndex></MobileIndex>
+</MediaQuery>
+
+修改 src/css/mobile.js
+修改 index.html
+新建 src/css/mobile.js
