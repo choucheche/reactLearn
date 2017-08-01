@@ -1,0 +1,17 @@
+https://github.com/github/fetch
+插件 fetch 用来请求数据操作
+cnpm install fetch --save
+
+https://ant.design/components/modal-cn/
+模态框，弹出框
+
+https://ant.design/components/message-cn/
+提示框
+
+https://ant.design/components/tabs-cn/
+标签页
+
+https://ant.design/components/form-cn/
+表单
+
+修改 pc_header.js

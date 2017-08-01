@@ -1,0 +1,2 @@
+新建 src\js\components\mobile_footer.js
+修改mobile_index.js

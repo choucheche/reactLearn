@@ -60,3 +60,8 @@ cnpm install --save react-router
 https://github.com/contra/react-responsive
 插件，可以实现媒体查询响应式代码，自适应PC和移动
 cnpm install react-responsive --save
+
+步骤13-1 注册功能模块设计（上）
+https://github.com/github/fetch
+插件 fetch 用来请求数据操作
+cnpm install fetch --save

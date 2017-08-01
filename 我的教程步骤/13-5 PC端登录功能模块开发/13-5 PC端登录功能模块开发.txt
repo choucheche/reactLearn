@@ -1,0 +1,21 @@
+修改 pc_header.js
+<Tabs type="card">
+为
+<Tabs type="card" onChange={this.callback.bind(this)}>
+
+新增
+import {Router, Route, Link, browserHistory} from 'react-router';
+
+新增
+callback(key){
+//当点击模态框的 tabs 时，切换登陆和注册
+  if(key==1){
+    this.setState({action:'login'});
+  }else if(key==2){
+    this.setState({action:'register'});
+  }
+}
+
+新增
+<TabPane tab="登陆" key="1">
+省略。。。

@@ -1,0 +1,20 @@
+连接口，提交注册信息到服务器
+
+老师的代码有几处有问题
+如
+<FormItem label="账户">
+  {getFieldDecorator('r_userName', {
+    rules: [{ required: true, message: 'Please input your username!' }],
+  })(
+    <Input placeholder="请输入您的账号"/>
+  )}
+  {/*{getFieldDecorator('userName'代表这个input的内容接收名*/}
+</FormItem>
+
+和
+
+<Form layout={'horizontal'} onSubmit={this.handleSubmit.bind(this)}>
+
+和
+
+let {getFieldDecorator} = this.props.form;
