@@ -1,0 +1,8 @@
+修改 \src\js\components\pc_newscontainer.js
+使用文档 https://ant.design/components/carousel-cn/
+详细文档 https://github.com/akiran/react-slick
+用的这个轮播图效果
+
+修改 pc_index.js
+
+修改 pc.css

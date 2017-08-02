@@ -1,0 +1,5 @@
+新建 \src\js\components\mobile_list.js
+新建 \src\js\components\pc_news_block.js
+新建 \src\js\components\pc_news_image_block.js
+新建 \src\js\components\pc_newscontainer.js
+新建 \src\js\components\pc_product.js

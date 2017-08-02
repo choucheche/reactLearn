@@ -1,0 +1,49 @@
+/*头部*/
+.logo{
+  align-items: center;
+  display: flex;
+}
+.logo img{
+  width:48px;
+  height:48px;
+}
+.logo span{
+  font-size:24px;
+  padding-left:5px;
+}
+.register{
+  float: right !important;
+}
+.ant-menu-horizontal > .ant-menu-item > a, .ant-menu-horizontal > .ant-menu-submenu > a
+{
+  display: inline-block !important;
+}
+/*头部 结束*/
+
+/*轮播图页面 pc_newscontainer.js */
+.container{
+  padding-top:10px;
+}
+body .ant-carousel .slick-dots li button,body .ant-carousel .slick-dots li.slick-active button{
+/*轮播图的 dot*/
+  background:#000;
+  border:2px #fff solid;
+}
+body .ant-carousel .slick-slide img{
+  width:100%;
+}
+.leftContainer{
+  width:400px;
+  float:left;
+}
+.carousel{
+  width:400px;
+  float:left;
+}
+/*轮播图页面 pc_newscontainer.js 结束*/
+
+/*底部*/
+.footer{
+  text-align: center;
+}
+/*底部*/
