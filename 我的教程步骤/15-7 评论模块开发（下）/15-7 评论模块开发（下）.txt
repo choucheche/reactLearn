@@ -1,0 +1,12 @@
+修改 common_comments.js
+这里和老师的代码不一样
+{getFieldDecorator('remark', {
+  rules: [{ required: true, message: 'Please input your anything!' }],
+})(
+  <Input type="textarea" placeholder="随便写" />
+)}
+和
+let { getFieldDecorator, getFieldsError, getFieldError, isFieldTouched } = this.props.form;
+
+
+修改 pc_news_details.js

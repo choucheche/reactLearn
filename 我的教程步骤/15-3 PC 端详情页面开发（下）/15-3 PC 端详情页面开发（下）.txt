@@ -1,0 +1,10 @@
+修改 pc_new_details.js
+加入
+import PCNewsImageBlock from './pc_news_image_block';
+//引入图片新闻页面
+
+<PCNewsImageBlock count={40} type="top" width="100%" cartTitle="相关新闻" imageWidth="150px"/>
+
+页面回到顶部 添加
+import {BackTop} from 'antd';
+<BackTop/>

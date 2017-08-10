@@ -1,0 +1,8 @@
+pc_news_details.js
+
+修改 root.js
+其中根据 pc_news_block.js中的
+<Link to={'details/${newsItem.uniquekey}'} target="_blank">
+to={}里面的链接
+来写 root.js 中的
+<Route path="/details/:uniquekey" components={PCNewsDetails}></Route>

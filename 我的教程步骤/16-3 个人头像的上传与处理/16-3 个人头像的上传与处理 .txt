@@ -1,0 +1,6 @@
+修改 pc_usercenter.js
+
+和老师写的不一样 handleCancel
+<Modal visible ={this.state.previewVisible} footer={null} onCancel={this.handleCancel.bind(this)}>
+  <img alt="预览" src={this.state.previewImage}/>
+</Modal>

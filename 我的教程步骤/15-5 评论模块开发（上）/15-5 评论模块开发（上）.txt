@@ -1,0 +1,2 @@
+新建 评论模块
+\src\js\components\common_comments.js

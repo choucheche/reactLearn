@@ -1,0 +1,8 @@
+修改 mobile_usercenter.js
+修改 root.js
+修改 mobile_header.js
+
+修改
+<Link to={'/usercenter'}>
+  <Icon type="inbox"/>
+</Link>
